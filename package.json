@@ -1,0 +1,27 @@
+{
+  "name": "node_mysql",
+  "version": "1.0.0",
+  "description": "Sample app for using mysql with node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "html-loader": "^0.5.1",
+    "mysql": "^2.15.0",
+    "node-datetime": "^2.0.3",
+    "node-php": "0.0.1",
+    "path": "^0.12.7",
+    "php-express": "0.0.3",
+    "pug": "^2.0.0-rc.4",
+    "pug-loader": "^2.3.0"
+  },
+  "devDependencies": {
+    "file-loader": "^1.1.5"
+  }
+}
