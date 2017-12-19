@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1 #{article[0].title}
+    h5.col-sm-12
+        span.col-sm-6 #{(article[0].create_date).toLocaleString('en-US')}
+        span.badge.badge-pill.badge-success #{article[0].category}
+    p  #{article[0].content}
+    img(src='images/40561434.jpg')
+    | Here
+    hr
+    a.btn.btn-dark(href="/article/edit/"+article[0].id) Edit
+    a.btn.btn-danger.delete-article(href="#",data-id=article[0].id) Delete

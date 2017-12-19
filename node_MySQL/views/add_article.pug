@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    h1 #{title}
+    form(method='POST',action="/articles/add",accept-charset="utf-8")
+        #form-grop
+            label Title:
+            input.form-control(name="title",type="text",placeholder="please key your title!")
+        #form-grop
+            label Category:
+            select.form-control(name="category",type="text")
+                option(value="新聞") 新聞
+                option(value="科技") 科技
+                option(value="心得") 心得
+        #form-grop
+            label Content:
+            textarea.form-control(name="content",type="text",placeholder="please key your content!")
+        #form-grop
+            label Image:
+            input.form-control(name="images",type="file")
+        .form-check.form-check-inline.col-sm-12
+            label.radio-inline.col-sm-4 
+                input#inlineRadio1.form-check-input(type='radio', name='publish', value=1)
+                |  Publish
+            label.radio-inline.col-sm-4  
+                input#inlineRadio2.form-check-input(type='radio', name='publish', value=0)
+                |  Not Publish
+        input.btn.btn-primary(type='submit',value="儲存")

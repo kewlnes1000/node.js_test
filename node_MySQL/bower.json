@@ -1,0 +1,21 @@
+{
+  "name": "node_mysql",
+  "description": "Sample app for using mysql with node",
+  "main": "app.js",
+  "authors": [
+    "Tai-Siang <kewlnes2000@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
